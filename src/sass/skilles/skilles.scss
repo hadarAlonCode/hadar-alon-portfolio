@@ -1,0 +1,15 @@
+.skilles__logo{
+    width: 100px;
+    padding: 20px;
+}
+
+#css{
+    height: 107px;
+}
+
+.skilles__logos{
+    @include displayFlex(row, center, center);
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}

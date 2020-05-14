@@ -1,0 +1,7 @@
+.about__container{
+   background-color: #f8f8f8;
+   .about__inner__container{
+      @include displayFlex(column, center, center);
+      text-align: center;
+   }
+}

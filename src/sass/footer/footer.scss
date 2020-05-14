@@ -1,0 +1,55 @@
+.footer__container{
+    height: max-content;
+    background-color: #212020;
+    @include displayFlex(column, center, center);
+    width: 100vw;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+
+    .hadar__logo{
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .social__icons{
+        padding: 20px;
+        @include displayFlex(row, center, center);
+
+    }
+
+    .social__icon__container{
+        border-radius: 50%;
+        transition: 0.3s;
+        margin: 10px;
+        border: 2px solid white;
+
+        &:hover{
+            background-color: $header;
+            transition: 0.3s;
+            cursor: pointer;
+            border-color: $header;
+        }
+    }
+
+
+
+    .social__icon{
+        width: 20px; 
+        margin: 10px;
+        
+    }
+
+
+    // .db__logo{
+    //     width: 150px;
+    //     position: absolute;
+    //     right: 20px;
+
+    //     @include mediaMaxWidth(500px){
+    //         width: 80px;
+           
+    //      }
+    // }
+
+}

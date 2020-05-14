@@ -1,0 +1,81 @@
+.project__container{
+    @include displayFlex(row, space-between, center);
+    height: 300px;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 20px;
+
+    @include mediaMaxWidth(850px){
+        @include displayFlex(column, space-between, center);
+        height: max-content;
+      }
+
+      .project__text{
+        @include mediaMaxWidth(850px){
+            width: 100%;
+          } 
+      }
+
+    .under__line{
+       width: 70px;
+       background-color: rgba(0, 0, 0, 0.144);
+       height: 2px;
+       margin-top: 20px;
+    }
+
+    h4{
+        font-weight: 500;
+    }
+
+    h5{
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .tech__container{
+        @include displayFlex(row, unset, center);
+        div{
+            padding-right: 7px;
+            font-size: 13px;
+        }
+
+    }
+
+
+    img{
+        width: 400px;
+        height: 100%;
+        box-shadow: 1px 65px 25px -56px rgba(0,0,0,0.58);
+        @include mediaMaxWidth(900px){
+            padding-top: 20px;
+            margin-bottom: 20px;
+          }
+   
+    }
+
+    p{
+        padding-left: 0px;
+        color: rgb(83, 82, 82);
+    }
+
+    .btn{
+        // background-color: $header;
+        border: 2px solid  $header ;
+        color: $header;
+        margin-top: 20px;
+
+        &:hover{
+            border: 2px solid  $header ;
+            background-color: $header;
+            color: white;
+        }
+
+    }
+
+  
+
+}
+
+.project__container:last-child{
+  border: none;
+}
