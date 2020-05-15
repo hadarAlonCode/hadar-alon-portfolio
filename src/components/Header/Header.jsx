@@ -14,7 +14,7 @@ const Header = props => {
                 </Fade>
                 <Fade bottom opposite collapse delay={500}>
 
-                   <p>Hello! I'm Hadar, a Full-Stack Web Developer leaning to Front End. I love learning new things (and actually doing it pretty fast). I am an open-minded and communicative person who cares a lot about details.</p>
+                   <p>Hello! I'm Hadar, a Full-Stack Web Developer. I am an open-minded and communicative person who cares a lot about details.</p>
                    </Fade>
                   
 
