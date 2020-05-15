@@ -8,7 +8,7 @@ const Project = props => {
     
     return (
         <div className="project__container section__padding">
-            <Fade left delay={800}>
+            <Fade left delay={400}>
             <section className="project__text">
                 <h4>{name}</h4>
                 <div className="under__line"></div>
@@ -24,7 +24,7 @@ const Project = props => {
            
             </section>
             </Fade>
-            <Fade right delay={800}>
+            <Fade right delay={400}>
             <section className="project__img__container">
                  <img className='project__img' src={img} alt={name} />
             </section>

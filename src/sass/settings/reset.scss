@@ -175,7 +175,7 @@ html {
     font-weight: 500;
     border-radius: 3px;
     transition: 0.5s;
-    @include displayFlex(row, center, center);
+    // @include displayFlex(row, center, center);
 
     i{
       font-size: 15px;

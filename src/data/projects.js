@@ -19,7 +19,7 @@ export const projects = [
         img: movieStar,
         description: "A simple & responsive movies site.",
         site: "https://moviestar-app.netlify.app/",
-        tech: ["React" ,"Sass" , "The Movie DB (TMDb) API"]
+        tech: ["React", "Hooks" ,"Sass" , "The Movie DB (TMDb) API"]
     },
     {
         name: "Waether App",
