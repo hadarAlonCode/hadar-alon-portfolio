@@ -48,8 +48,8 @@ const isScrolledIntoView = (el) => {
                 <div className="grid about__inner__container">
                 <Fade left delay={800}>
                     <h2>ABOUT</h2>
-                    <p>Creative Full Stack web developer,  passionate about devoloping efficient web solutions, I am ambitious, adventurous, and love to take up new challenges.</p>
-                     <p>Proficient in React.js and Node.js. Proven experience with MERN stack and on/off site SEO latest requirements.</p>
+                    <p className="first__p">Creative Full Stack web developer,  passionate about devoloping efficient web solutions, I am ambitious, adventurous, and love to take up new challenges.</p>
+                    <p>Proficient in React.js and Node.js. Proven experience with MERN stack and on/off site SEO latest requirements.</p>
                     </Fade>
                     <div className="skilles__container">
                         <Fade>

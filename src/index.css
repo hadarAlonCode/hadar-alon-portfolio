@@ -261,6 +261,8 @@ header:after {
     justify-content: center;
     align-items: center;
     text-align: center; }
+  .about__container .first__p {
+    padding-bottom: 0px; }
 
 .skilles__logo {
   width: 100px;

@@ -4,4 +4,8 @@
       @include displayFlex(column, center, center);
       text-align: center;
    }
+
+   .first__p {
+      padding-bottom: 0px;
+   }
 }
