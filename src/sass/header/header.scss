@@ -21,21 +21,47 @@ header:after {
   }
 
 .header__container{
+    div{
+        height: max-content!important;
+    }
     @include displayFlex(column, center, center);
     height: 400px;
     z-index: 1;
+    @include mediaMaxWidth(500px){
+        height: max-content;
+        padding-bottom: 25px;
+    }
 
     h1{
         font-size: 50px;
         font-weight: 500;
         padding-bottom: 30px;
+
+        @include mediaMaxWidth(500px){
+            text-align: center;
+            padding-top: 20px;
+            
+            font-size: 37px;
+            
+          }
     }
 
     p{
         max-width: 600px ;
         text-align: center;
         margin-bottom:40px ;
+
+        @include mediaMaxWidth(500px){
+            padding: unset;
+            
+          }
         
+    }
+
+    .btn{
+        @include mediaMaxWidth(500px){
+            margin-bottom: 20px;
+        }
     }
     
 }

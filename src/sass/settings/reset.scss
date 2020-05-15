@@ -74,9 +74,13 @@ input {
     box-sizing: border-box;
 }
 
+.App{
+  width: 100vw;
+}
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 

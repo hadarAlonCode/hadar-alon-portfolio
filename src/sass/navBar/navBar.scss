@@ -19,6 +19,10 @@
     left: 0;
     z-index: 1000;
 
+    a:first-child{
+        margin-right: auto;
+    }
+
 
     ul{
         @include displayFlex(row, flex-end, center);
@@ -54,28 +58,27 @@
 
 .mobile__nav{
 
-    .mobile__nav--off{
-        transition: 0.5px!important;
+    a{
+        height: 100%;
+    }
+
+    .mobile__navbar{
+        transition: 0.2s!important;
         height: 0px !important;
         pointer-events: none!important;
         opacity: 0;
-    }
-
-    .mobile__nav--on{
         display: flex;
         flex-direction: column!important;
         justify-content: center!important;
         align-items: center;
         position: fixed;
-        background-color: rebeccapurple;
-        height: 305px!important;
-        top: 0;
         width: 100vw;
-        transition: 0.5px;
-       
-        
+        top: 0;
+
         li{
-            margin: auto;
+            // margin: auto;
+            margin-left: unset!important;
+            width: 100vw;
         }
     
        
@@ -87,6 +90,19 @@
             }
     
         }
+
+    }
+
+    .mobile__navbar--on{
+        background-color: rebeccapurple;
+        height: 305px!important;
+        width: 100vw;
+        opacity: 1;
+        transition: 0.5s;
+        pointer-events: all!important;
+       
+        
+      
     }
 
     

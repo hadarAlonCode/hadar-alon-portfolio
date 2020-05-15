@@ -5,8 +5,8 @@ import Project from './Parts/Project';
 
 const Projects = props => {
     return (
-        <section className="section__padding projects__container">
-            <div className="grid about__inner__container">
+        <section className="grid section__padding projects__container">
+            <div className=" about__inner__container">
 
                 <h2 >PROJECTS</h2>
                 {

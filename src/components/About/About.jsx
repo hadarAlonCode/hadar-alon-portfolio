@@ -39,7 +39,6 @@ const isScrolledIntoView = (el) => {
     var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
     // Partially visible elements return true:
     //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    console.log(isVisible ,"isVisible")
     return isVisible;
 }
 
@@ -47,22 +46,24 @@ const isScrolledIntoView = (el) => {
         <section className="section__padding about__container" >
 
                 <div className="grid about__inner__container">
-
+                <Fade left delay={800}>
                     <h2>ABOUT</h2>
                     <p>Enthusiastic Full Stack web developer. Proficient in Node.js and React.js. Proven experience with MERN stack and on/off site SEO latest requirements.</p>
-                    
+                    </Fade>
                     <div className="skilles__container">
                         <Fade>
-                             <div id="skills__title">SKILLES</div>
+                             <div id="skills__title"></div>
                         </Fade>
 
                         {skilles_animation ? <Skilles /> : null}
+                        
+                       
                         
                     </div>
                 </div>
 
                 
-                
+                <div id="projectsL"></div>
             </section>
     );
 };

@@ -28,12 +28,22 @@ const NavBar = props => {
         if( nav && first_load ){
     
           let scrollFunc = function() {
+            let innerWidth = window.innerWidth;
+
             let scroll = window.scrollY
+            let num =400
+            if(innerWidth <= 500){
+                num=330
+            }
+          
+            console.log()
            
-            if (scroll >= 400) {
-                nav.className = "navbar__container__color"
+            if (scroll >= num) {
+                nav.classList.add("navbar__container__color");
+                nav.classList.remove("navbar__container");
             } else {
-                nav.className = "navbar__container"
+                nav.classList.add("navbar__container");
+                nav.classList.remove("navbar__container__color");
             }
             };
 
@@ -62,13 +72,11 @@ const NavBar = props => {
 
 
     const toggleOpenMobileNav =()=>{
-
         setShowMobileLink(!show_mobile_nav_link)
-
-       
     }
 
     return (
+       
         <nav className={toggle_mobile_nav ? "navbar__container mobile__nav" : "navbar__container"} id="nav">
             
                 {toggle_mobile_nav ? 
@@ -79,16 +87,31 @@ const NavBar = props => {
                             </span>
                     </button>
                </div>
+       
                : null
                }
-
-            <ul  className= {show_mobile_nav_link ? "grid mobile__nav--on" : "grid mobile__nav--off"} >
-                <li><img className='navbar__logo'  src={logo} alt="hadar" /></li>
-                <li className="navbar__link">About</li>
-                <li className="navbar__link">Projects</li>
-                <li className="navbar__link">Contact</li>
-            </ul>
+             
+                <ul className= {show_mobile_nav_link ? "grid mobile__navbar--on mobile__navbar" : "grid mobile__navbar"} >
+               
+                <a onClick={()=>toggleOpenMobileNav()} href={"#"} >
+                    <li>
+                        <img className='navbar__logo'src={logo} alt="hadar" />
+                    </li>
+                </a>
+                <a  onClick={()=>toggleOpenMobileNav()}href={"#aboutL"}>
+                    <li className="navbar__link">About</li>
+                </a>
+                <a onClick={()=>toggleOpenMobileNav()} href={"#projectsL"} >
+                    <li className="navbar__link">Projects</li>
+                </a>
+                <a onClick={()=>toggleOpenMobileNav()} href={"#footerL"} >  
+                    <li className="navbar__link">Contact</li>
+                </a>
+              
+                </ul>
+               
         </nav>
+       
     );
 };
 

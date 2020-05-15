@@ -1,9 +1,5 @@
 import React from 'react';
 import hadar from "../../images/hadar.png"
-import linkedin from "../../images/social/linkedin.png"
-import fb from "../../images/social/fb.png"
-import email from "../../images/social/email.png"
-import github from "../../images/social/github.png"
 
 import Fade from 'react-reveal/Fade';
 import {socials} from "../../data/socials"
@@ -11,7 +7,9 @@ import {socials} from "../../data/socials"
 
 const Footer = props => {
     return (
-        <footer className="footer__container">
+        <footer id="footerL" className="footer__container">
+
+        <div className="contact__msg">Have a question or want to work together?</div>
 
         <div className="social__icons">
             {socials.map(s=>{
