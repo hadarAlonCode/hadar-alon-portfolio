@@ -1,6 +1,7 @@
 import React, {useEffect , useState} from 'react';
 import Fade from 'react-reveal/Fade';
 
+
 const Header = props => {
 
    
@@ -21,8 +22,8 @@ const Header = props => {
               
                     <a href={"#projectsL"} >
                     <Fade bottom opposite collapse delay={700}>
-                            <button id="aboutL" className="btn"> CHECK MY WORK </button>
-                    </Fade>
+                       <button id="aboutL" className="btn"> CHECK MY WORK </button>
+                       </Fade>
                     </a>
            
                 </div>

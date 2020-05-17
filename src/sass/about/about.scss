@@ -5,14 +5,14 @@
       text-align: center;
 
       .btn{
-         border: 2px solid blueviolet;
-         color: blueviolet;
+         border: 2px solid $header;
+         color: $header;
          margin-bottom: 15px;
 
 
          &:hover{
-            border: 2px solid blueviolet;
-            background-color: blueviolet;
+            border: 2px solid $header;
+            background-color: $header;
             color: white;
          }
 

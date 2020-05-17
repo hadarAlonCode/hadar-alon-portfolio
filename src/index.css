@@ -103,7 +103,7 @@ a {
 
 .btn:hover {
   background-color: white;
-  color: blueviolet;
+  color: #5108D9;
   transition: 0.5s;
   border-color: white; }
 
@@ -121,7 +121,7 @@ h3 {
   font-weight: 500; }
 
 .navbar__container__color {
-  background: blueviolet;
+  background: #5108D9;
   transition: 0.3s; }
 
 .navbar__container {
@@ -200,6 +200,7 @@ h3 {
 
 .mobile__nav .mobile__navbar--on {
   background-color: #8a2be2;
+  background: linear-gradient(to bottom, #C802BB, #2729CC);
   width: 100vw;
   opacity: 1;
   transition: 0.3s;
@@ -216,7 +217,7 @@ header {
   background-repeat: no-repeat, repeat;
   background-size: cover;
   position: relative;
-  background-image: url("./images/header.jpg"); }
+  background-image: url("./images/h2.jpg"); }
 
 header:after {
   position: absolute;
@@ -225,8 +226,7 @@ header:after {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  background-color: rgba(137, 43, 226, 0.26); }
+  z-index: 0; }
 
 .header__container {
   display: flex;
@@ -270,12 +270,12 @@ header:after {
     align-items: center;
     text-align: center; }
     .about__container .about__inner__container .btn {
-      border: 2px solid blueviolet;
-      color: blueviolet;
+      border: 2px solid #5108D9;
+      color: #5108D9;
       margin-bottom: 15px; }
       .about__container .about__inner__container .btn:hover {
-        border: 2px solid blueviolet;
-        background-color: blueviolet;
+        border: 2px solid #5108D9;
+        background-color: #5108D9;
         color: white; }
   .about__container .first__p {
     padding-bottom: 0px; }
@@ -356,12 +356,12 @@ header:after {
     padding-left: 0px;
     color: #535252; }
   .project__container .btn {
-    border: 2px solid blueviolet;
-    color: blueviolet;
+    border: 2px solid #5108D9;
+    color: #5108D9;
     margin-top: 20px; }
     .project__container .btn:hover {
-      border: 2px solid blueviolet;
-      background-color: blueviolet;
+      border: 2px solid #5108D9;
+      background-color: #5108D9;
       color: white; }
 
 .project__container:nth-child(odd) {
@@ -413,10 +413,10 @@ header:after {
     height: 45px;
     width: 45px; }
     .footer__container .social__icon__container:hover {
-      background-color: blueviolet;
+      background-color: #5108D9;
       transition: 0.3s;
       cursor: pointer;
-      border-color: blueviolet; }
+      border-color: #5108D9; }
   .footer__container .social__icon {
     width: 20px;
     margin: 10px; }

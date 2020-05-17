@@ -1,6 +1,7 @@
 
  .navbar__container__color{
     background: $header;
+    // background:  #2729CC;
     transition: 0.3s;
 }
 
@@ -117,6 +118,7 @@
 
     .mobile__navbar--on{
         background-color: #8a2be2;
+        background: linear-gradient(to bottom, #C802BB, #2729CC);
         width: 100vw;
         opacity: 1;
         transition: 0.3s;
