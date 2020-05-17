@@ -3,7 +3,7 @@ import logo from "../../images/hadar.png"
 
 const NavBar = props => {
     const [first_load, setFirstLoad] = useState(true)
-    const [toggle_mobile_nav, setToggleMobileNav] = useState(false)
+    const [toggle_mobile_nav, setToggleMobileNav] = useState(true)
     const [show_mobile_nav_link, setShowMobileLink] = useState(false)
 
     

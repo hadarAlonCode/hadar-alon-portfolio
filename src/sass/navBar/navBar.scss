@@ -81,6 +81,7 @@
         position: fixed;
         width: 100vw;
         top: 0;
+        opacity: 0;
         color: transparent;
         height: 60vh!important;
         min-height: max-content;
@@ -125,6 +126,7 @@
         transform: scaleY(1);
         transform-origin: top;
         color: white;
+        opacity: 1;
         
 
         a{
