@@ -22,7 +22,7 @@ export const projects = [
         tech: ["React", "Hooks" ,"Sass" , "The Movie DB (TMDb) API"]
     },
     {
-        name: "Waether App",
+        name: "Weather App",
         id:3,
         img: weather,
         description: "Display current weather and a 5-day forecast of the searched location.",
