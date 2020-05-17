@@ -83,7 +83,8 @@
         width: 100vw;
         top: 0;
         color: transparent;
-        height: 100vh!important;
+        height: 60vh!important;
+        min-width: max-content;
         transform: scaleY(0);
         transform-origin: top;
 
