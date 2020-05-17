@@ -5,22 +5,49 @@ header{
     background-repeat: no-repeat, repeat;
     background-size: cover;
     position: relative;
-    background-image:  url('./images/h2.jpg');
+    background-image:  url('./images/h3.jpg');
+    position: relative;
+    background-position: 50% -250px;
+
+    @include mediaMaxWidth(1200px){
+        background-position: unset;
+        display: block;
+      }
+
+    
+
+
+    .header__img{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        position: absolute;
+        display: none;
+
+       @include mediaMaxWidth(500px){
+        
+        display: block;
+      }
+    }
 }
 
 
-header:after {
-    position: absolute;
-    content: " ";
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    // background-color: rgba(137, 43, 226, 0.26);
-  }
+
+
+// header:after {
+//     position: absolute;
+//     content: " ";
+//     top: 0px;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 0;
+//     // background-color: rgba(137, 43, 226, 0.26);
+//   }
 
 .header__container{
+    z-index: 2;
+    position: relative;
     div{
         height: max-content!important;
     }

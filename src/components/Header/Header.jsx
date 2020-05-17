@@ -1,6 +1,6 @@
 import React, {useEffect , useState} from 'react';
 import Fade from 'react-reveal/Fade';
-
+import header_img from "../../images/h3.jpg"
 
 const Header = props => {
 
@@ -9,6 +9,8 @@ const Header = props => {
     
     return (
         <header >
+                <img className='header__img' src={header_img} alt="header" />
+
                 <div  className="grid header__container">
                 <Fade bottom opposite collapse delay={300}>
                    <h1>HADAR ALON</h1>

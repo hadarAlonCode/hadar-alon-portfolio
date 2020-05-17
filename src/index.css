@@ -182,31 +182,33 @@ h3 {
   position: fixed;
   width: 100vw;
   top: 0;
-  height: 240px !important;
-  height: max-content !important;
+  color: transparent;
+  height: 50vh !important;
   transform: scaleY(0);
   transform-origin: top; }
   .mobile__nav .mobile__navbar a {
-    height: 0px;
-    opacity: 0;
     margin-right: unset !important; }
   .mobile__nav .mobile__navbar li {
     width: 100vw; }
-  .mobile__nav .mobile__navbar .navbar__link:hover {
-    background-color: rgba(255, 255, 255, 0.226);
-    color: white !important;
-    box-shadow: unset !important;
-    border-radius: 0px !important; }
+  .mobile__nav .mobile__navbar .navbar__link {
+    margin: auto;
+    height: calc(100% /3); }
+    .mobile__nav .mobile__navbar .navbar__link:hover {
+      background-color: rgba(255, 255, 255, 0.226);
+      color: white !important;
+      box-shadow: unset !important;
+      border-radius: 0px !important; }
 
 .mobile__nav .mobile__navbar--on {
   background-color: #8a2be2;
-  background: linear-gradient(to bottom, #C802BB, #2729CC);
+  background: linear-gradient(to bottom, #0F011B, #5108D9);
   width: 100vw;
   opacity: 1;
   transition: 0.3s;
   pointer-events: all !important;
   transform: scaleY(1);
-  transform-origin: top; }
+  transform-origin: top;
+  color: white; }
   .mobile__nav .mobile__navbar--on a {
     height: 60px;
     opacity: 1; }
@@ -217,18 +219,26 @@ header {
   background-repeat: no-repeat, repeat;
   background-size: cover;
   position: relative;
-  background-image: url("./images/h2.jpg"); }
-
-header:after {
-  position: absolute;
-  content: " ";
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0; }
+  background-image: url("./images/h3.jpg");
+  position: relative;
+  background-position: 50% -250px; }
+  @media screen and (max-width: 1200px) {
+    header {
+      background-position: unset;
+      display: block; } }
+  header .header__img {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    display: none; }
+    @media screen and (max-width: 500px) {
+      header .header__img {
+        display: block; } }
 
 .header__container {
+  z-index: 2;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
