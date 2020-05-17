@@ -2,6 +2,7 @@
 import React, {useEffect ,useState} from 'react';
 import Skilles from '../Skilles/Skilles';
 import Fade from 'react-reveal/Fade';
+import pdf from "../../files/Hadar_Alon_CV.pdf";
 
 const About = props => {
 
@@ -46,20 +47,19 @@ const isScrolledIntoView = (el) => {
         <section className="section__padding about__container" >
 
                 <div className="grid about__inner__container">
-                <Fade left delay={800}>
-                    <h2>ABOUT</h2>
-                    <p className="first__p">Creative Full Stack web developer.  Passionate about developing efficient web solutions. I am ambitious, adventurous, and love to take on new challenges.</p>
-                    <p>Proficient in ReactJS and NodeJS. Proven experience with MERN stack and on/off site SEO latest requirements.</p>
+                    <Fade left delay={800}>
+                        <h2>ABOUT</h2>
+                        <p className="first__p">Creative Full Stack web developer.  Passionate about developing efficient web solutions. I am ambitious, adventurous, and love to take on new challenges.</p>
+                        <p>Proficient in ReactJS and NodeJS. Proven experience with MERN stack and on/off site SEO latest requirements.</p>
+                        <a href={pdf} download="Hadar_Alon_CV"><button className="btn">DOWNLOAD RESUME</button></a>
+
                     </Fade>
                     <div className="skilles__container">
                         <Fade>
                              <div id="skills__title"></div>
                         </Fade>
 
-                        {skilles_animation ? <Skilles /> : null}
-                        
-                       
-                        
+                        {skilles_animation ? <Skilles /> : null}      
                     </div>
                 </div>
 

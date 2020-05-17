@@ -3,6 +3,23 @@
    .about__inner__container{
       @include displayFlex(column, center, center);
       text-align: center;
+
+      .btn{
+         border: 2px solid blueviolet;
+         color: blueviolet;
+         margin-bottom: 15px;
+
+
+         &:hover{
+            border: 2px solid blueviolet;
+            background-color: blueviolet;
+            color: white;
+         }
+
+      }
+
+  
+     
    }
 
    .first__p {

@@ -33,7 +33,7 @@ const NavBar = props => {
             let scroll = window.scrollY
             let num =400
             if(innerWidth <= 500){
-                num=330
+                num=280
             }
           
             console.log()

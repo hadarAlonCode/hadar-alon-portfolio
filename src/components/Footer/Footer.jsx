@@ -1,5 +1,6 @@
 import React from 'react';
 import hadar from "../../images/hadar.png"
+import pdf from "../../files/Hadar_Alon_CV.pdf";
 
 import Fade from 'react-reveal/Fade';
 import {socials} from "../../data/socials"
@@ -10,6 +11,7 @@ const Footer = props => {
         <footer id="footerL" className="footer__container">
 
         <div className="contact__msg">Have a question or want to work together?</div>
+        <a href={pdf} download="Hadar_Alon_CV"><button className="btn">DOWNLOAD RESUME</button></a>
 
         <div className="social__icons">
             {socials.map(s=>{

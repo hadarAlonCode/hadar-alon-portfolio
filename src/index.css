@@ -269,6 +269,14 @@ header:after {
     justify-content: center;
     align-items: center;
     text-align: center; }
+    .about__container .about__inner__container .btn {
+      border: 2px solid blueviolet;
+      color: blueviolet;
+      margin-bottom: 15px; }
+      .about__container .about__inner__container .btn:hover {
+        border: 2px solid blueviolet;
+        background-color: blueviolet;
+        color: white; }
   .about__container .first__p {
     padding-bottom: 0px; }
 
@@ -380,6 +388,8 @@ header:after {
   margin-top: auto;
   position: relative;
   bottom: 0; }
+  .footer__container .btn {
+    margin-top: 35px; }
   .footer__container .contact__msg {
     color: white;
     font-size: 12px;
@@ -399,7 +409,9 @@ header:after {
     border-radius: 50%;
     transition: 0.3s;
     margin: 10px;
-    border: 2px solid white; }
+    border: 2px solid white;
+    height: 45px;
+    width: 45px; }
     .footer__container .social__icon__container:hover {
       background-color: blueviolet;
       transition: 0.3s;
