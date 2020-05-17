@@ -74,7 +74,6 @@
     .mobile__navbar{
         transition: 0.3s!important;
         pointer-events: none!important;
-        opacity: 0;
         display: flex;
         flex-direction: column!important;
         justify-content: center!important;
@@ -84,13 +83,15 @@
         top: 0;
         color: transparent;
         height: 60vh!important;
-        min-width: max-content;
+        min-height: max-content;
+        background-color: #8a2be2;
+        background: linear-gradient(to bottom, #0F011B, #DD013C);
+        opacity: 1;
         transform: scaleY(0);
         transform-origin: top;
 
         a{
-            
-           
+            height: 100px;
             margin-right: unset!important;
         }
 
@@ -122,13 +123,13 @@
     .mobile__navbar--on{
         background-color: #8a2be2;
         background: linear-gradient(to bottom, #0F011B, #DD013C);
-        width: 100vw;
         opacity: 1;
         transition: 0.3s;
         pointer-events: all!important;
         transform: scaleY(1);
         transform-origin: top;
         color: white;
+        
 
         a{
             height: 100px;

@@ -174,7 +174,6 @@ h3 {
 .mobile__nav .mobile__navbar {
   transition: 0.3s !important;
   pointer-events: none !important;
-  opacity: 0;
   display: flex;
   flex-direction: column !important;
   justify-content: center !important;
@@ -184,10 +183,14 @@ h3 {
   top: 0;
   color: transparent;
   height: 60vh !important;
-  min-width: max-content;
+  min-height: max-content;
+  background-color: #8a2be2;
+  background: linear-gradient(to bottom, #0F011B, #DD013C);
+  opacity: 1;
   transform: scaleY(0);
   transform-origin: top; }
   .mobile__nav .mobile__navbar a {
+    height: 100px;
     margin-right: unset !important; }
   .mobile__nav .mobile__navbar li {
     width: 100vw; }
@@ -203,7 +206,6 @@ h3 {
 .mobile__nav .mobile__navbar--on {
   background-color: #8a2be2;
   background: linear-gradient(to bottom, #0F011B, #DD013C);
-  width: 100vw;
   opacity: 1;
   transition: 0.3s;
   pointer-events: all !important;
