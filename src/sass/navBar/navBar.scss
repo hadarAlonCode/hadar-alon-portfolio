@@ -83,7 +83,7 @@
         width: 100vw;
         top: 0;
         color: transparent;
-        height: 50vh!important;
+        height: 100vh!important;
         transform: scaleY(0);
         transform-origin: top;
 
@@ -120,7 +120,7 @@
 
     .mobile__navbar--on{
         background-color: #8a2be2;
-        background: linear-gradient(to bottom, #0F011B, #5108D9);
+        background: linear-gradient(to bottom, #0F011B, #DD013C);
         width: 100vw;
         opacity: 1;
         transition: 0.3s;

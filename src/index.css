@@ -103,7 +103,7 @@ a {
 
 .btn:hover {
   background-color: white;
-  color: #5108D9;
+  color: #5F0128;
   transition: 0.5s;
   border-color: white; }
 
@@ -121,7 +121,7 @@ h3 {
   font-weight: 500; }
 
 .navbar__container__color {
-  background: #5108D9;
+  background: #5F0128;
   transition: 0.3s; }
 
 .navbar__container {
@@ -183,7 +183,7 @@ h3 {
   width: 100vw;
   top: 0;
   color: transparent;
-  height: 50vh !important;
+  height: 100vh !important;
   transform: scaleY(0);
   transform-origin: top; }
   .mobile__nav .mobile__navbar a {
@@ -201,7 +201,7 @@ h3 {
 
 .mobile__nav .mobile__navbar--on {
   background-color: #8a2be2;
-  background: linear-gradient(to bottom, #0F011B, #5108D9);
+  background: linear-gradient(to bottom, #0F011B, #DD013C);
   width: 100vw;
   opacity: 1;
   transition: 0.3s;
@@ -280,12 +280,12 @@ header {
     align-items: center;
     text-align: center; }
     .about__container .about__inner__container .btn {
-      border: 2px solid #5108D9;
-      color: #5108D9;
+      border: 2px solid #5F0128;
+      color: #5F0128;
       margin-bottom: 15px; }
       .about__container .about__inner__container .btn:hover {
-        border: 2px solid #5108D9;
-        background-color: #5108D9;
+        border: 2px solid #5F0128;
+        background-color: #5F0128;
         color: white; }
   .about__container .first__p {
     padding-bottom: 0px; }
@@ -366,12 +366,12 @@ header {
     padding-left: 0px;
     color: #535252; }
   .project__container .btn {
-    border: 2px solid #5108D9;
-    color: #5108D9;
+    border: 2px solid #5F0128;
+    color: #5F0128;
     margin-top: 20px; }
     .project__container .btn:hover {
-      border: 2px solid #5108D9;
-      background-color: #5108D9;
+      border: 2px solid #5F0128;
+      background-color: #5F0128;
       color: white; }
 
 .project__container:nth-child(odd) {
@@ -423,10 +423,10 @@ header {
     height: 45px;
     width: 45px; }
     .footer__container .social__icon__container:hover {
-      background-color: #5108D9;
+      background-color: #5F0128;
       transition: 0.3s;
       cursor: pointer;
-      border-color: #5108D9; }
+      border-color: #5F0128; }
   .footer__container .social__icon {
     width: 20px;
     margin: 10px; }
