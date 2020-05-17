@@ -160,7 +160,6 @@ h3 {
     #nav ul img {
       width: 50px; }
     #nav ul .navbar__link {
-      margin-left: 20px;
       transition: 0.3s;
       font-size: 16px;
       padding: 3px;
@@ -170,12 +169,8 @@ h3 {
         box-shadow: 0px 10px 11px -8px rgba(255, 255, 255, 0.58);
         border-radius: 5px; }
 
-.mobile__nav a {
-  height: 60px; }
-
 .mobile__nav .mobile__navbar {
-  transition: 0.2s !important;
-  height: 0px !important;
+  transition: 0.3s !important;
   pointer-events: none !important;
   opacity: 0;
   display: flex;
@@ -184,9 +179,15 @@ h3 {
   align-items: center;
   position: fixed;
   width: 100vw;
-  top: 0; }
+  top: 0;
+  height: 240px !important;
+  height: max-content !important;
+  transform: scaleY(0);
+  transform-origin: top; }
+  .mobile__nav .mobile__navbar a {
+    height: 0px;
+    opacity: 0; }
   .mobile__nav .mobile__navbar li {
-    margin-left: unset !important;
     width: 100vw; }
   .mobile__nav .mobile__navbar .navbar__link:hover {
     background-color: rgba(255, 255, 255, 0.226);
@@ -196,12 +197,15 @@ h3 {
 
 .mobile__nav .mobile__navbar--on {
   background-color: rebeccapurple;
-  height: 240px !important;
-  height: max-content !important;
   width: 100vw;
   opacity: 1;
-  transition: 0.5s;
-  pointer-events: all !important; }
+  transition: 0.3s;
+  pointer-events: all !important;
+  transform: scaleY(1);
+  transform-origin: top; }
+  .mobile__nav .mobile__navbar--on a {
+    height: 60px;
+    opacity: 1; }
 
 header {
   padding-top: 60px;

@@ -98,14 +98,14 @@ const NavBar = props => {
                         <img className='navbar__logo'src={logo} alt="hadar" />
                     </li>
                 </a>
-                <a  onClick={()=>toggleOpenMobileNav()}href={"#aboutL"}>
-                    <li className="navbar__link">About</li>
+                <a className="navbar__link"  onClick={()=>toggleOpenMobileNav()}href={"#aboutL"}>
+                    <li >About</li>
                 </a>
-                <a onClick={()=>toggleOpenMobileNav()} href={"#projectsL"} >
-                    <li className="navbar__link">Projects</li>
+                <a className="navbar__link" onClick={()=>toggleOpenMobileNav()} href={"#projectsL"} >
+                    <li >Projects</li>
                 </a>
-                <a onClick={()=>toggleOpenMobileNav()} href={"#footerL"} >  
-                    <li className="navbar__link">Contact</li>
+                <a  className="navbar__link" onClick={()=>toggleOpenMobileNav()} href={"#footerL"} >  
+                    <li >Contact</li>
                 </a>
               
                 </ul>

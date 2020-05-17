@@ -44,7 +44,6 @@
         }
 
         .navbar__link{
-            margin-left: 20px; 
             transition: 0.3s;
             font-size: 16px;
             padding: 3px;
@@ -61,14 +60,10 @@
 
 
 .mobile__nav{
-
-    a{
-        height: 60px;
-    }
+    
 
     .mobile__navbar{
-        transition: 0.2s!important;
-        height: 0px !important;
+        transition: 0.3s!important;
         pointer-events: none!important;
         opacity: 0;
         display: flex;
@@ -78,12 +73,23 @@
         position: fixed;
         width: 100vw;
         top: 0;
+        height: 240px !important;
+        height: max-content!important;
+        transform: scaleY(0);
+        transform-origin: top;
+
+        a{
+            height: 0px;
+            opacity: 0;
+        }
 
         li{
-            // margin: auto;
-            margin-left: unset!important;
+      
             width: 100vw;
+           
         }
+
+       
     
        
     
@@ -102,15 +108,18 @@
 
     .mobile__navbar--on{
         background-color: rebeccapurple;
-        height: 240px !important;
-        height: max-content!important;
         width: 100vw;
         opacity: 1;
-        transition: 0.5s;
+        transition: 0.3s;
         pointer-events: all!important;
+        transform: scaleY(1);
+        transform-origin: top;
+
+        a{
+            height: 60px;
+            opacity: 1;
+        }
        
-        
-      
     }
 
     
