@@ -27,7 +27,7 @@ export const projects = [
         img: weather,
         description: "Display current weather and a 5-day forecast of the searched location.",
         site: "https://weather-app-hadar.herokuapp.com/",
-        tech: ["React" ,"Hooks" , "Sass", "MaterialUI" , "AccuWeather API"]
+        tech: ["React" ,"Hooks", "MobX" , "Sass", "MaterialUI" , "AccuWeather API"]
     },
 
 ]
