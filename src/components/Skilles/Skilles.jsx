@@ -39,16 +39,7 @@ const Skilles = props => {
         //yoyo!!!! 
         // tl.from("#html", {y: 10 , duration: 2, ease: "power1.inOut" ,repeat: -1 , yoyo: true} );
         // tl.to("#css" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.from("#sass" , 3, {y: 15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#js" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#jquery" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#react" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#redux" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#mobx" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#node" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#express" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#mongo" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
-        // tl.to("#sql" , 3, {y: -15, duration: 2.5, ease: "power1.inOut", repeat: -1, yoyo: true});
+    
        
     }
 

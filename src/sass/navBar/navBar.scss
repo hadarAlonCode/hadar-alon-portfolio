@@ -27,17 +27,25 @@
     ul{
         @include displayFlex(row, flex-end, center);
         height: 100%;
+
+        a{
+            margin-right: 20px; 
+        }
+
+        a:first-child{
+            margin-right: auto;
+        }
+
+
         
 
         li{          
             cursor: pointer;
             height: 100%;
             @include displayFlex(row, center, center);
+           
         }
 
-        li:first-child{
-            margin-right: auto;
-        }
 
         img{
             width: 50px;
@@ -81,12 +89,13 @@
         a{
             height: 0px;
             opacity: 0;
+            margin-right: unset!important;
         }
 
         li{
       
             width: 100vw;
-           
+
         }
 
        
@@ -123,8 +132,5 @@
     }
 
     
-    
-       
-
 }
 
