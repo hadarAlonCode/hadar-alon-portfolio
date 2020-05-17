@@ -86,7 +86,6 @@
         min-height: max-content;
         background-color: #8a2be2;
         background: linear-gradient(to bottom, #0F011B, #DD013C);
-        opacity: 1;
         transform: scaleY(0);
         transform-origin: top;
 
@@ -121,9 +120,6 @@
     }
 
     .mobile__navbar--on{
-        background-color: #8a2be2;
-        background: linear-gradient(to bottom, #0F011B, #DD013C);
-        opacity: 1;
         transition: 0.3s;
         pointer-events: all!important;
         transform: scaleY(1);
