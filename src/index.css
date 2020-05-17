@@ -192,7 +192,7 @@ h3 {
     width: 100vw; }
   .mobile__nav .mobile__navbar .navbar__link {
     margin: auto;
-    height: calc(100% / 3); }
+    height: calc((100%-60px) / 3); }
     .mobile__nav .mobile__navbar .navbar__link:hover {
       background-color: rgba(255, 255, 255, 0.226);
       color: white !important;
