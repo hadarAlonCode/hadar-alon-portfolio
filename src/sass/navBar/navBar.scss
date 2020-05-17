@@ -88,8 +88,8 @@
         transform-origin: top;
 
         a{
-            // height: 0px;
-            // opacity: 0;
+            
+           
             margin-right: unset!important;
         }
 
@@ -105,7 +105,7 @@
     
         .navbar__link{
             margin: auto;
-            height: calc(100% /3);
+            height: calc(100% / 3);
     
             &:hover{
                background-color: rgba(255, 255, 255, 0.226);
@@ -130,7 +130,7 @@
         color: white;
 
         a{
-            height: 60px;
+            height: 100px;
             opacity: 1;
         }
        
