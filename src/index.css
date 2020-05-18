@@ -575,7 +575,7 @@ header {
   transition: 0.5s; }
   @media screen and (max-width: 500px) {
     #scroll__icon {
-      bottom: 100px; } }
+      bottom: 85px; } }
 
 .scroll__icon--show {
   opacity: 1;

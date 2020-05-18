@@ -13,7 +13,7 @@
     transition: 0.5s;
 
     @include mediaMaxWidth(500px){
-        bottom: 100px;
+        bottom: 85px;
      }
 }
 
@@ -29,31 +29,6 @@
     pointer-events: none;
     
 }
-
-
-// @keyframes move-down {
-//     25% {opacity: 1;}
-//     33% {
-//         opacity: 1;
-//         transform: translateY(30px);
-//     }
-//     67% {
-//         opacity: 1;
-//         transform: translateY(40px);
-//     }
-//     100% {
-//         opacity: 0;
-//         transform: translateY(55px) scale3d(.5,.5,.5);
-//     }
-// }
-
-// .arrow__one{
-//     animation: move-down 2s ease-out 1s infinite;
-// }
-
-// .arrow__two{
-//     animation: move-down 2s ease-out 2s infinite;
-// }
 
 
 @keyframes bounceAlpha {
