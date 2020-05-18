@@ -1,11 +1,5 @@
 export const ScrollToTop =()=>{
-    let root = document.getElementById("app");
-
-    console.log(root);
+  
+        window.scrollTo({top: 0, behavior: 'smooth'});
     
-
-    if(root){
-        root.scrollTo({top: 0, behavior: 'smooth'});
-
-    }
 }
