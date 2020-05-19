@@ -34,9 +34,6 @@ class ContactForm extends Component {
 
 
     validationForm = () => {
-        // if validation class is on - valitadion wrong
-
-        // check all the outfot types 
 
         this.setState({
             check_validation: true
@@ -74,7 +71,6 @@ class ContactForm extends Component {
             } else {
 
                
-
                 let subject = `Email from ${form_data.email} `
                 let text = `name:${form_data.name}, email:${form_data.email}, message: ${form_data.message} `
                 let body = {
@@ -89,6 +85,11 @@ class ContactForm extends Component {
                         form_loader: false
                     })
                     contactFormSuccess(true)
+                }else{
+                    alert("There was an error trying to dend your Message, Please try again later")
+                    this.setState({
+                        form_loader: false
+                    })
                 }
 
             }
