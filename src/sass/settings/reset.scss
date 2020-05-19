@@ -71,6 +71,11 @@ table {
 }
 
 input {
+  
+  
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   outline: none;
   border: unset;
   font-family: 'Montserrat', sans-serif!important;
