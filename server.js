@@ -31,6 +31,6 @@ app.listen(port, function () {
   console.log(`Running on port ${port}`)
 })
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
