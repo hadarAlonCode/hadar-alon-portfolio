@@ -61,7 +61,8 @@ table {
   border-spacing: 0; }
 
 input {
-  font-family: "Montserrat", sans-serif !important; }
+  font-family: "Montserrat", sans-serif !important;
+  background-color: transparent; }
 
 * {
   box-sizing: border-box; }
@@ -625,3 +626,99 @@ header {
   animation-delay: 0.2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
+
+.contact__section {
+  background-color: #212020;
+  color: white; }
+  .contact__section .contact__section__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contact__section .contact__section__inner .contact__msg {
+      text-align: center; }
+
+.contact__form {
+  height: 230px;
+  width: 350px; }
+  @media screen and (max-width: 400px) {
+    .contact__form {
+      width: 250px; } }
+
+.contact__form__container {
+  margin-top: 10px; }
+  .contact__form__container .btn {
+    display: flex;
+    margin-left: auto; }
+
+.success__message {
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .success__message i {
+    padding-right: 11px; }
+  .success__message h3 {
+    color: #ff0057;
+    font-size: 30px;
+    font-weight: 500; }
+  .success__message .message {
+    padding: 20px; }
+
+.input__container {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: relative; }
+  .input__container h3 {
+    font-weight: 500;
+    padding-bottom: 5px; }
+  .input__container input {
+    border: unset;
+    border-bottom: 2px solid white;
+    box-shadow: unset;
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+    color: white; }
+  .input__container input:focus {
+    border-bottom: 2px solid #DD013C; }
+  .input__container .validation_error {
+    position: absolute;
+    bottom: -2px;
+    color: #d8446b;
+    font-size: 12px; }
+
+@keyframes grow {
+  0%, 40%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.loader__conatiner {
+  width: 100%;
+  padding-top: 13px;
+  margin-right: auto;
+  display: flex;
+  align-items: start;
+  justify-content: flex-end; }
+
+.dot-loader {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  -webkit-animation: 1.2s grow ease-in-out infinite;
+  animation: 1.2s grow ease-in-out infinite; }
+
+.dot-loader--2 {
+  -webkit-animation: 1.2s grow ease-in-out infinite 0.15555s;
+  animation: 1.2s grow ease-in-out infinite 0.15555s;
+  margin: 0 20px; }
+
+.dot-loader--3 {
+  -webkit-animation: 1.2s grow ease-in-out infinite 0.3s;
+  animation: 1.2s grow ease-in-out infinite 0.3s; }

@@ -6,6 +6,7 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import ScrollTopIcon from './components/ScrollTopIcon/ScrollTopIcon';
 import { ScrollToTop } from './functions/scroll';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
       <Header />
       <About />
       <Projects />
+      <Contact />
       <Footer />
       <ScrollTopIcon scrollTo={ScrollToTop}/>
     </div>

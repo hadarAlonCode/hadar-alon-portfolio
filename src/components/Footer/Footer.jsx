@@ -10,8 +10,7 @@ const Footer = props => {
     return (
         <footer id="footerL" className="footer__container">
 
-        <div className="contact__msg">Have a question or want to work together?</div>
-        <a href={pdf} download="Hadar_Alon_CV"><button className="btn">DOWNLOAD RESUME</button></a>
+        {/* <a href={pdf} download="Hadar_Alon_CV"><button className="btn">DOWNLOAD RESUME</button></a> */}
 
         <div className="social__icons">
             {socials.map(s=>{

@@ -1,0 +1,55 @@
+.contact__section{
+    background-color: #212020;
+    color: white;
+
+    .contact__section__inner{
+        @include displayFlex(column, center, center);
+
+        .contact__msg{
+            text-align: center;
+        }
+
+    }
+}
+
+
+.contact__form{
+   height: 230px;
+   width: 350px;
+   
+   @include mediaMaxWidth(400px){
+        
+    width: 250px;
+  }
+}
+
+.contact__form__container{
+    margin-top: 10px;
+
+    .btn{
+        display: flex;
+        margin-left: auto;
+
+        
+    }
+}
+
+.success__message{
+    height: 230px; 
+    @include displayFlex(column, center, center);
+
+    i{
+        padding-right: 11px;
+    }
+    
+
+    h3{
+        color: #ff0057;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .message{
+    padding:20px
+    }
+}

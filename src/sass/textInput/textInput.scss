@@ -1,0 +1,36 @@
+.input__container{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+
+
+    h3{
+        font-weight: 500;
+        padding-bottom: 5px;
+
+    }
+
+    input {
+        border: unset;
+        border-bottom: 2px solid white;
+        box-shadow: unset;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        color: white;
+    }
+
+    input:focus{
+        border-bottom: 2px solid #DD013C;
+ 
+    }
+
+    .validation_error{
+        position: absolute;
+        bottom:-2px;
+        color: rgb(216, 68, 107);
+        font-size: 12px;
+    }
+
+
+}
