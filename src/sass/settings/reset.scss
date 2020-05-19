@@ -33,7 +33,6 @@ footer, header, hgroup, menu, nav, section {
 body {
  line-height: 1;
  overflow-x: hidden;
-//  background-color: #141414;
  background-color: white;
  color: black;
  font-family: 'Montserrat', sans-serif!important;
@@ -72,13 +71,15 @@ input {
   
   
   -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   outline: none;
   border: unset;
   font-family: 'Montserrat', sans-serif!important;
   background-color: transparent;
 }
+
+
 *{
     box-sizing: border-box;
 }
@@ -93,37 +94,6 @@ html {
 }
 
 
-
-
-
-
-// @keyframes underline {
-//   from {width:0px;}
-//   to {width: 120px;}
-// }
-
-// .title__underline{
-//     width: 120px;
-//     height: 3px;
-//     background-color: white;
-//     animation-name: underline;
-//     animation-duration: 4s;
-//     @include shadow-white()
-    
-//   }
-
-// .disable-hover {
-//   pointer-events: none;
-// }
-
-// .main__container{
-//     transition: all .2s;
-//     // overflow-y: auto;
-//     // overflow-x: hidden;
-//     height: 100vh;
-//     color: #fff;
-//     position: relative;
-// }
 
 .grid{
   width: 900px;
@@ -141,31 +111,27 @@ html {
 }
 
 
-  // *::-webkit-scrollbar {
-  //   width: 7px;
-  //   @include mediaMaxWidth(501px){
-  //     width: 0px;
-  //    }
-  // }
+  *::-webkit-scrollbar {
+    width: 5px;
+    @include mediaMaxWidth(501px){
+      width: 0px;
+     }
+  }
   
-  // /* Track */
-  // *::-webkit-scrollbar-track {
-  //   background: #3a3939f3 ;
-  //   border-radius: 20px;
-  // }
+  /* Track */
+  *::-webkit-scrollbar-track {
+    background: #c7c3c3f3 ;
+    border-radius: 20px;
+  }
    
-  // /* Handle */
-  // *::-webkit-scrollbar-thumb {
-  //   background: rgb(0, 0, 0);
-  //   border-radius: 20px;
+  /* Handle */
+  *::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.589);
+    border-radius: 20px;
 
     
-  // }
+  }
   
-  // /* Handle on hover */
-  // *::-webkit-scrollbar-thumb:hover {
-  //   // background: #f1f1f1d8; 
-  // }
 
 
   a{
@@ -176,8 +142,7 @@ html {
   .btn {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif!important;
-    // border: none;
-    // background: linear-gradient(to right, #000000d3, #ff0000ef);
+
     background-color: transparent;
     border: 2px solid;
     color: white;
@@ -192,10 +157,8 @@ html {
   }
 
   .btn:hover{
-    // background: linear-gradient(to right,#000000f1, #69666667);
     background-color: rgb(255, 255, 255);
     color: $header;
-    
     transition: 0.5s;
     border-color: white;
 

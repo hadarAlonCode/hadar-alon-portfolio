@@ -1,14 +1,13 @@
 .contact__section{
     background-color: #212020;
     color: white;
+    padding: 10px;
 
     .contact__section__inner{
         @include displayFlex(column, center, center);
-
         .contact__msg{
             text-align: center;
         }
-
     }
 }
 
