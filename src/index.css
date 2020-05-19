@@ -61,6 +61,8 @@ table {
   border-spacing: 0; }
 
 input {
+  outline: none;
+  border: unset;
   font-family: "Montserrat", sans-serif !important;
   background-color: transparent; }
 
