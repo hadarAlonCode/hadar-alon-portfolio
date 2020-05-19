@@ -4,7 +4,7 @@ const router = express.Router()
 const sendMail = require('../functions/sendMail.js')
 
 
-router.put('/mail', async (req, res) => {
+router.post('/mail', async (req, res) => {
 
     let text = req.body.text
     let subject = req.body.subject
