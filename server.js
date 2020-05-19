@@ -14,14 +14,15 @@ app.use(favicon(__dirname + '/build/favicon.ico'));
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 // @ts-ignore
 app.use(cors())
 
 
-  app.post('/mail', async (req, res) => {
+
+
+app.post('/mail', async (req, res) => {
 
     let text = req.body.text
     let subject = req.body.subject
@@ -32,17 +33,15 @@ app.use(cors())
       res.send({ ok: true, result: 'messege received!' })
     }else{
       res.send({ ok: false, result: 'messege error' })
-
     }
-   
-  })
+})
 
 // app.use(express.static(path.join(__dirname, 'src'))) 
 // app.use(express.static(path.join(__dirname, 'node_modules')))
 
 
 
-app.get('/*', function (req, res) {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
