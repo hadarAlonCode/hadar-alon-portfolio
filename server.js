@@ -4,7 +4,6 @@ const favicon = require('express-favicon');
 const path = require('path');
 const bodyParser = require('body-parser') 
 const app = express();
-const api = require('./server/routes/api.js')
 const port = process.env.PORT || 8080;
 const sendMail = require('./server/functions/sendMail.js')
 
