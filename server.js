@@ -23,12 +23,14 @@ app.use(cors())
 // app.use(express.static(path.join(__dirname, 'src'))) 
 // app.use(express.static(path.join(__dirname, 'node_modules')))
 
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+
 
 app.use('/', api)
 
 app.listen(port, function () {
   console.log(`Running on port ${port}`)
 })
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
