@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 
 const Contact = props => {
 
-   const [success_message , SetSuccessMessage] = useState(true)
+   const [success_message , SetSuccessMessage] = useState(false)
 
     const contactFormSuccess =(boolean)=>{
           SetSuccessMessage(boolean)
