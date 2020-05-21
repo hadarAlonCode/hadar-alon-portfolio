@@ -14,15 +14,15 @@ useEffect(() => {
     let skilles_title = document.getElementById("skills__title");
 
     if(skilles_title){
-        let start_animation =  isScrolledIntoView(skilles_title)
-        if(start_animation){
-         setSkillesAnimation(true)}
+        let start_animation = isScrolledIntoView(skilles_title)
+
+        if(start_animation)
+        setSkillesAnimation(true)
      
         let scrollEvent = function() {
            let start_animation =  isScrolledIntoView(skilles_title)
            if(start_animation){
             setSkillesAnimation(true)
-            
             window.removeEventListener('scroll', scrollEvent)
            }
         };

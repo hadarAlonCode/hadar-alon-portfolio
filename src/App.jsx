@@ -23,13 +23,7 @@ function App() {
 
       let myScrollFunc = function() {
         let scroll = window.scrollY
-        console.log(scroll)
-       
-        if (scroll >= 300) {
-          scroll_icon.className = "scroll__icon--show"
-        } else {
-          scroll_icon.className = "scroll__icon--hide"
-        }
+        scroll >= 300 ? scroll_icon.className = "scroll__icon--show" : scroll_icon.className = "scroll__icon--hide"
         };
       
         window.addEventListener("scroll", myScrollFunc);

@@ -3,9 +3,6 @@ import Fade from 'react-reveal/Fade';
 import header_img from "../../images/h3.jpg"
 
 const Header = props => {
-
-   
-
     
     return (
         <header >

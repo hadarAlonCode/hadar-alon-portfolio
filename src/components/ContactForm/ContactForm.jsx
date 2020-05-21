@@ -12,7 +12,6 @@ class ContactForm extends Component {
                 name: "",
                 email:"",
                 message:""
-
             },
             form_loader: false,
             check_validation: false
@@ -26,7 +25,6 @@ class ContactForm extends Component {
         const { form_data } = this.state
         let copy_form_data = JSON.parse(JSON.stringify(form_data))
         copy_form_data[state_name] = value
-
         this.setState({
             form_data: copy_form_data
         })
@@ -49,13 +47,10 @@ class ContactForm extends Component {
 
 
     submitForm = async () => {
-
-      
         const { form_data } = this.state
         const {contactFormSuccess} = this.props
 
         this.validationForm()
-
         this.setState({
             form_loader: true
         })
@@ -68,8 +63,8 @@ class ContactForm extends Component {
                     form_loader: false
                 })
                 return
-            } else {
 
+            } else {
                
                 let subject = `Email from ${form_data.email} `
                 let text = `name:${form_data.name}, email:${form_data.email}, message: ${form_data.message} `

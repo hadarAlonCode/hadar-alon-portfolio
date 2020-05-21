@@ -10,13 +10,7 @@ const NavBar = props => {
 
     useEffect(() => {
         let innerWidth = window.innerWidth;
-
-        if(innerWidth <= 800){
-            toggleMobileNav(true)
-        }else{
-            toggleMobileNav(false)
-        }
-
+        innerWidth <= 800 ? toggleMobileNav(true) : toggleMobileNav(false)
         window.addEventListener("resize", onResize);
         
       } , []);
@@ -27,7 +21,7 @@ const NavBar = props => {
         let nav = document.getElementById("nav");
         if( nav && first_load ){
     
-          let scrollFunc = function() {
+        let scrollFunc = function() {
             let innerWidth = window.innerWidth;
 
             let scroll = window.scrollY
@@ -36,7 +30,6 @@ const NavBar = props => {
                 num=280
             }
           
-            console.log()
            
             if (scroll >= num) {
                 nav.classList.add("navbar__container__color");
@@ -45,7 +38,7 @@ const NavBar = props => {
                 nav.classList.add("navbar__container");
                 nav.classList.remove("navbar__container__color");
             }
-            };
+        };
 
             window.addEventListener('scroll', scrollFunc)   
             setFirstLoad(false)
@@ -55,18 +48,11 @@ const NavBar = props => {
 
       const onResize =()=>{
         let innerWidth = window.innerWidth;
-
-        if(innerWidth <= 800){
-           toggleMobileNav(true)
-        }else{
-            toggleMobileNav(false)
-        }
+        innerWidth <= 800 ? toggleMobileNav(true) : toggleMobileNav(false)
     }
 
 
-
     const toggleMobileNav=(boolean)=>{
-
         setToggleMobileNav(boolean)
     }
 
@@ -75,6 +61,7 @@ const NavBar = props => {
         setShowMobileLink(!show_mobile_nav_link)
     }
 
+    
     return (
        
         <nav className={toggle_mobile_nav ? "navbar__container mobile__nav" : "navbar__container"} id="nav">
